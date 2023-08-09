@@ -6,7 +6,7 @@ on:
 
 jobs:
   unit-test:
-    name:Building
+    name: Building
 
     steps:
       - name: checkout code
