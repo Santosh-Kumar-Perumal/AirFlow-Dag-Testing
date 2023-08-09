@@ -1,0 +1,14 @@
+apache-airflow
+apache-airflow-providers-google
+datetime
+uuid
+requests
+google-auth
+google-cloud
+google-auth-oauthlib
+google-auth-httplib2
+pathlib
+certfi
+logging
+mock
+pytest
