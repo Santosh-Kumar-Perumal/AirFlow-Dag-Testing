@@ -26,4 +26,4 @@ jobs:
       - name: Run tests
         run: |
            cd DAGs
-           python testcase/unit_test.py 2>&1
+           python ../testcase/unit_test.py 2>&1
