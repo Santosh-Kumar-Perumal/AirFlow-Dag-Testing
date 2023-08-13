@@ -28,7 +28,7 @@ with models.DAG(
     def greeting():
         import logging
         var = Variable.get("my_env_var")  
-        logging.info("Hello World!")
+        logging.info("Hello World!!!")
         print(f"The value of 'my_env_var' is: {var}")
 
     # An instance of an operator is called a task. In this case, the
