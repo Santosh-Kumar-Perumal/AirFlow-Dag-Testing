@@ -6,7 +6,8 @@ from airflow.models import DAG, Variable
 from airflow.operators import python_operator
 
 
-var = Variable.get("my_env_var")  
+# var = Variable.get("my_env_var")  
+var = "Testing"
 
 default_dag_args = {
     # The start_date describes when a DAG is valid / can be run. Set this to a
