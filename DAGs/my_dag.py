@@ -7,7 +7,7 @@ from airflow.operators import python_operator
 
 
 # var = Variable.get("my_env_var")  
-var = "Testing"
+# var = "Testing"
 
 default_dag_args = {
     # The start_date describes when a DAG is valid / can be run. Set this to a
@@ -27,7 +27,7 @@ with models.DAG(
 ) as dag:
     def greeting():
         import logging
-
+        var = Variable.get("my_env_var")  
         logging.info("Hello World!")
         print(f"The value of 'my_env_var' is: {var}")
 
