@@ -6,7 +6,7 @@ from airflow.models import Variable
 from airflow.models import DagBag
 
 class TestDagIntegrity(unittest.TestCase):
-   LOAD_SECOND_THRESHOLD = 1
+  LOAD_SECOND_THRESHOLD = 1
 
   def setup(self):
     self.dagbag = DagBag(dag_folder=".", include_examples=False)
@@ -17,7 +17,7 @@ class TestDagIntegrity(unittest.TestCase):
     len(self.dagbag.import_errors),
     'DAG import failures. Errors: {}'.format(self.dagbag.import_errors))
 
-    if(len(self.dagbag.import_errors) == 0):
+  if(len(self.dagbag.import_errors) == 0):
       print("DAG Import passed")
       print("unit tests completed")
 
