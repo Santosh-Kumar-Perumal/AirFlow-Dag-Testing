@@ -24,4 +24,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run tests
-        run: python testcase/unit_test.py 2>&1
+        run: |
+           cd DAGs
+           python testcase/unit_test.py 2>&1
