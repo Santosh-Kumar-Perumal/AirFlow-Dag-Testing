@@ -9,8 +9,8 @@ from airflow.models import DagBag
 class TestDagIntegrity(unittest.TestCase):
     LOAD_SECOND_THRESHOLD = 1
 
-    @patch.dict('os.environ', AIRFLOW_VAR_SANTOSH="TestVal"):
-    assert "TestVal" == Variable.get("santosh")
+    # @patch.dict('os.environ', {'AIRFLOW_CONN_MY_CONNECTION': 'mock_connection'})
+    @patch.dict('os.environ', {'AIRFLOW_VAR_SANTOSH': 'TestVal'})
     def setUp(self):
        self.dagbag = DagBag(dag_folder=".", include_examples=False)
     
