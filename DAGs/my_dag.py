@@ -6,7 +6,7 @@ from airflow.models import DAG, Variable
 from airflow.operators import python_operator
 
 
-var = Variable.get("my_env_var")  
+var = Variable.get("santosh")  
 # var = "Testing"
 
 default_dag_args = {
