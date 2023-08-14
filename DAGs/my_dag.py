@@ -1,4 +1,4 @@
-mport datetime
+import datetime
 
 from airflow import models
 from airflow.operators import bash_operator
