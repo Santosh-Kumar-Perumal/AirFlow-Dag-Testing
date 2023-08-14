@@ -5,6 +5,8 @@ from unittest.mock import patch
 from airflow.models import Variable
 from airflow.models import DagBag
 
+with mock.patch.dict('os.environ', AIRFLOW_VAR_SANTOSH="TestVal"):
+    assert "TestVal" == Variable.get("santosh")
 class TestDagIntegrity(unittest.TestCase):
     LOAD_SECOND_THRESHOLD = 1
     
